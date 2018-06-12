@@ -1,0 +1,10 @@
+page-home {
+    * { font-variant: small-caps;}
+    h2 { font-weight: bold; color: #36D; }
+    ion-icon{font-size:25px}
+    #busca{background: #fff;color: black}
+    .sumiu{
+        display: none
+    }
+    #procura ion-searchbar{height:24px}
+}
