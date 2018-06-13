@@ -1,6 +1,6 @@
 export class Contatos{
     constructor(
-        public id?: string,
+        public id?: number,
         public nome?: string,
         public lugar?: string,
         public foto?: string,

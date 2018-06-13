@@ -9,7 +9,6 @@ import { HomePage } from '../pages/home/home';
 import { HttpModule } from '@angular/http';
 import { SearchPipe } from '../pipes/search/search';
 import { InserirPage } from '../pages/inserir/inserir';
-import { EditarPage } from '../pages/editar/editar';
 import  { ImagePicker } from '@ionic-native/image-picker';
 
 // var config = {
@@ -26,8 +25,7 @@ import  { ImagePicker } from '@ionic-native/image-picker';
     MyApp,
     HomePage,
     InserirPage,
-    SearchPipe,
-    EditarPage
+    SearchPipe
   ],
   imports: [
     BrowserModule,
@@ -38,8 +36,7 @@ import  { ImagePicker } from '@ionic-native/image-picker';
   entryComponents: [
     MyApp,
     HomePage,
-    InserirPage,
-    EditarPage
+    InserirPage
   ],
   providers: [
     StatusBar,

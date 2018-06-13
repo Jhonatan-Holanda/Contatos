@@ -2,7 +2,6 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams, ToastController } from 'ionic-angular';
 import { Contatos } from '../../model/contatos';
 import { Http } from '@angular/http';
-import { EditarPage } from '../editar/editar';
 import { HomePage } from '../home/home';
 
 /**
@@ -56,9 +55,13 @@ export class DetalhesPage {
       console.log(this.contatos);
     });
   }
-  editar(){
-    this.navCtrl.push(EditarPage);
+
+  getId(id:number){
+    this.navCtrl.push("EditarPage", {
+      id: id
+    })
   }
+  
   excluir(id:number){
 
     id = this.navParams.get("id");

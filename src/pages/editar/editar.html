@@ -7,12 +7,28 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>editar</ion-title>
+    <ion-title>Edita Contatos</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
 <ion-content padding>
-
+    <ion-list>
+      <ion-item>
+        <ion-label stacked>Nome</ion-label>
+        <ion-input type="text" name="nome" [(ngModel)]="cadastra.nome" #nome placeholder="{{contatos.nome}}" required></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label stacked>Telefone</ion-label>
+        <ion-input type="text" name="telefone" [(ngModel)]="cadastra.telefone" #telefone placeholder="{{contatos.telefone}}" required></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label stacked>Email</ion-label>
+        <ion-input type="text" name="email" [(ngModel)]="cadastra.email" #email placeholder="{{contatos.email}}" required></ion-input>
+      </ion-item>
+      <ion-item>
+        <button (click)="Editar(cadastra)" ion-button color="primary" block>Editar</button>
+      </ion-item>
+    </ion-list>
 </ion-content>
