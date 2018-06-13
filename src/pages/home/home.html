@@ -35,7 +35,7 @@
   <ion-list>
     <ion-item (click)="getId(d.id)" *ngFor="let d of dados | search:terms">
       <ion-avatar item-start>
-        <img src="../assets/imgs/{{d.foto}}.png">
+        <img src="{{d.foto}}">
       </ion-avatar>
       <h2>{{d.nome}}</h2>
       <p>{{d.telefone}}</p>

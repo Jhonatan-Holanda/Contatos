@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
 import { Http,Headers, RequestOptions } from '@angular/http';
 import { IonicPage, NavController,ToastController } from 'ionic-angular';
 import {HomePage}  from '../home/home';
@@ -17,7 +17,7 @@ import { LoadingController } from 'ionic-angular';
 })
 export class InserirPage {
   private url:string = "http://localhost:3000/contatos";
-
+  @ViewChild('foto') img;
   public cadastra = {
         nome: "",  
 				lugar: "",  
@@ -26,7 +26,12 @@ export class InserirPage {
 				telefone:""
   }
   Cadastro(cadastra){
-     
+     if(this.img.value == ""){
+       this.cadastra.foto = "../assets/imgs/logo.png"
+       console.log(this.cadastra.foto)
+     }
+    
+
      let headers = new Headers();
      headers.append('Content-type','application/json');
 

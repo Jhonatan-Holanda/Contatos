@@ -35,13 +35,13 @@
     </ion-item> -->
 
     <ion-item>
-        <ion-label floating>Foto</ion-label>
-        <ion-input type="text" [(ngModel)]="cadastra.foto"></ion-input>
+        <ion-label stacked>Foto</ion-label>
+        <ion-input type="text" #foto [(ngModel)]="cadastra.foto" placeholder="URL da Imagem"></ion-input>
       </ion-item>
   
     <ion-item>
-      <ion-label floating>Telefone</ion-label>
-      <ion-input type="text" [(ngModel)]="cadastra.telefone"></ion-input>
+      <ion-label stacked>Telefone</ion-label>
+      <ion-input type="text" [(ngModel)]="cadastra.telefone" placeholder="(XX) X XXXX-XXXX"></ion-input>
     </ion-item>
 
     <ion-item>
