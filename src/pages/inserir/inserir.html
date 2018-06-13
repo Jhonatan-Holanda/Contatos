@@ -38,11 +38,8 @@
         <ion-label stacked>Foto</ion-label>
         <ion-input type="text" #foto [(ngModel)]="cadastra.foto" placeholder="URL da Imagem"></ion-input>
       </ion-item>
-  
-    <ion-item>
-      <ion-label stacked>Telefone</ion-label>
-      <ion-input type="text" [(ngModel)]="cadastra.telefone" placeholder="(XX) X XXXX-XXXX"></ion-input>
-    </ion-item>
+      
+      <ion-input-mask label="Telefone" typeInput="text" typeLabel="floating" [(ngModel)]="cadastra.telefone" mask="(00) 0 0000-0000" [dropSpecialCharacters]="false"></ion-input-mask>
 
     <ion-item>
         <ion-label floating>Email</ion-label>

@@ -46,7 +46,7 @@ export class EditarPage {
     });
   }
 
-  constructor(public navCtrl: NavController, public navParams: NavParams,public http:Http,public loadingCtrl:ToastController,public toastCtrl:ToastController) {
+  constructor(public navCtrl: NavController, public navParams: NavParams,public http:Http,public loadingCtrl:LoadingController,public toastCtrl:ToastController,) {
     this.id = navParams.get("id");
     this.contatos = new Contatos();
     this.getEpisodeById(this.id).then(data => {
@@ -98,6 +98,12 @@ this.http.put(`http://localhost:3000/contatos/${this.id}`, cadastra, options)
     duration: 1000
 });
 toast.present();
+let loader = this.loadingCtrl.create({
+  content: "Aguarde...",
+  duration: 1000
+});
+loader.present();
+
 
 this.navCtrl.setRoot(HomePage);
 });

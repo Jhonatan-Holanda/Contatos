@@ -11,6 +11,8 @@ import { SearchPipe } from '../pipes/search/search';
 import { InserirPage } from '../pages/inserir/inserir';
 import  { ImagePicker } from '@ionic-native/image-picker';
 
+import {IonMaskModule} from '@pluritech/ion-mask';
+
 // var config = {
 //   apiKey: "AIzaSyAr477BdWyckl4O5onkXn61t5h3SWTSFco",
 //   authDomain: "contatos-1698.firebaseapp.com",
@@ -30,7 +32,8 @@ import  { ImagePicker } from '@ionic-native/image-picker';
   imports: [
     BrowserModule,
     HttpModule,
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp),
+    IonMaskModule.forRoot()
   ],
   bootstrap: [IonicApp],
   entryComponents: [

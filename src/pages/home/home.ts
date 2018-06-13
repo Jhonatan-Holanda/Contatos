@@ -17,12 +17,12 @@ export class HomePage {
     this.getAll();
   }
   getAll(){
-      this.http.get(this.url)
-      .map(res => res.json())
-      .subscribe(data => {
-        this.dados = data;
-      });
-    }
+    this.http.get(this.url)
+    .map(res => res.json())
+    .subscribe(data => {
+      this.dados = data;
+    });
+  }
 
   getId(id:number){
     this.navCtrl.push("DetalhesPage", {

@@ -9,20 +9,12 @@
       "id": 19
     },
     {
-      "nome": "Papa Kill",
+      "nome": "Manoel",
       "email": "manoel.mecat@gmail.com",
       "telefone": "(88) 9 9968-9957",
       "lugar": "Telefone",
       "foto": "https://scontent.fjdo1-1.fna.fbcdn.net/v/t1.0-9/19894934_1502937989729426_1490596326317339176_n.jpg?_nc_cat=0&oh=d6571f662f11aef786bb66581d3f4a60&oe=5B7AAB20",
       "id": 22
-    },
-    {
-      "nome": "Ruan",
-      "email": "jhonatanFilhao@gmail.com",
-      "telefone": "(88) 9 9999-9999",
-      "lugar": "Telefone",
-      "foto": "https://scontent.fjdo1-1.fna.fbcdn.net/v/t1.0-9/27544798_103473693806557_4371342968512842726_n.jpg?_nc_cat=0&oh=a2073d6301e2ea83fecfb4ac22e5f914&oe=5BB022E3",
-      "id": 23
     },
     {
       "nome": "Artur",
@@ -135,6 +127,22 @@
       "email": "jaynefr188@gmail.com",
       "telefone": "(88) 9 9923-7810",
       "id": 38
+    },
+    {
+      "nome": "Coxinha",
+      "lugar": "Telefone",
+      "foto": "https://scontent.fjdo4-1.fna.fbcdn.net/v/t1.0-9/31786524_1908550055846486_6932738606347845632_n.jpg?_nc_cat=0&oh=21cf49c70bd28ad69cbabb393b946e09&oe=5BB730D7",
+      "email": "maialeo409@gmail.com",
+      "telefone": "(88) 9 9798-1994",
+      "id": 42
+    },
+    {
+      "nome": "Neo",
+      "lugar": "Google",
+      "foto": "../assets/imgs/logo.png",
+      "email": "neo@gmail.com",
+      "telefone": "(88) 9 9999-9999",
+      "id": 43
     }
   ]
 }

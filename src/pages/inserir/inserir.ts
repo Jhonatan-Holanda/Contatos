@@ -28,7 +28,6 @@ export class InserirPage {
   Cadastro(cadastra){
      if(this.img.value == ""){
        this.cadastra.foto = "../assets/imgs/logo.png"
-       console.log(this.cadastra.foto)
      }
     
 

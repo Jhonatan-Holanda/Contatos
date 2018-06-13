@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams, ToastController } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, ToastController, LoadingController } from 'ionic-angular';
 import { Contatos } from '../../model/contatos';
 import { Http } from '@angular/http';
 import { HomePage } from '../home/home';
@@ -40,7 +40,8 @@ export class DetalhesPage {
   constructor(public navCtrl: NavController,
               public navParams: NavParams,
               public http:Http,
-              public toastCtrl:ToastController) {
+              public toastCtrl:ToastController,
+              public loadingCtrl:LoadingController) {
     this.id = navParams.get("id");
     this.contatos = new Contatos();
     console.log(this.id);
@@ -73,6 +74,11 @@ export class DetalhesPage {
         duration: 1000
     });
     toast.present();
+    let loader = this.loadingCtrl.create({
+      content: "Aguarde...",
+      duration: 1000
+    });
+    loader.present();
     this.navCtrl.setRoot(HomePage);
   });
   }
