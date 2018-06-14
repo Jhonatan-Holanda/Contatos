@@ -140,9 +140,17 @@
       "nome": "Neo",
       "lugar": "Google",
       "foto": "../assets/imgs/logo.png",
-      "email": "neo@gmail.com",
-      "telefone": "(88) 9 9999-9999",
+      "email": "manoelmecat@gmail.com",
+      "telefone": "(88) 8 8888-8888",
       "id": 43
+    },
+    {
+      "nome": "Doutor N",
+      "lugar": "Telefone",
+      "foto": "https://vignette.wikia.nocookie.net/crash-bandicoot/images/8/8a/Neo_Cortex.png/revision/latest?cb=20161206020529&path-prefix=pt-br",
+      "email": "n@gmail.com",
+      "telefone": "(99) 9 9999-9999",
+      "id": 44
     }
   ]
 }
